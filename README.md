@@ -14,7 +14,7 @@ Följande funktioner efterfrågas:
 
 2. Om fel finns i inkommande sträng ska en exception kastas. Följande exceptions bör klassen kunna kasta från konstruktorn:
 
-   ArgumentException – Something is wrong with the argument.
+   ArgumentException – Something is wrong with the argument. (För få rader tex.)
    ArgumentNullException – Argument is null.
    
 3. Lägg till ytterligare funktionalitet som kan dela upp de olika raderna i sina beståndsdelar.
@@ -23,7 +23,6 @@ Följande funktioner efterfrågas:
    Har ingen titel angetts ska titeln sättas till en tom sträng.
    Skulle en annan titel än de uppräknade anges ska en exception av typen NotSupportedException kastas.
 
-4. Verifiera att postnummer består av 5 siffror alternativt med inledande landskod för Sverige. SE-xxx xx.
-   Returnera endast de 5 siffrorna när postnummer propertyn efterfrågas. Om postnumret inte följer formatet eller har för många siffror
-   ska en ArgumentException kastas.
-
+5. För att åter kunna skriva ut adressen vill vi ha en publik metod som kan returnera en adress-sträng.
+   Ange formatet på den efterfrågade strängen via frivilliga inparametrar. Anges inget ska så komplett adress som möjligt returneras. 
+   Anges tex att endast namn ska returneras så ska endast det returneras. 
